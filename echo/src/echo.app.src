@@ -1,7 +1,7 @@
 {application, echo,
  [
   {description, "reactive programing demo 1"},
-  {vsn, "0.0.1"},
+  {vsn, "1"},
   {registered, []},
   {applications, [
                   kernel,

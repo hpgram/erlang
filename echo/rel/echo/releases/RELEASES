@@ -1,0 +1,10 @@
+[{release,"echo","1","5.10.3",
+          [{kernel,"2.16.3",
+                   "/home/gavin/project/erlang/echo/rel/echo/lib/kernel-2.16.3"},
+           {stdlib,"1.19.3",
+                   "/home/gavin/project/erlang/echo/rel/echo/lib/stdlib-1.19.3"},
+           {sasl,"2.3.2",
+                 "/home/gavin/project/erlang/echo/rel/echo/lib/sasl-2.3.2"},
+           {echo,"0.0.1",
+                 "/home/gavin/project/erlang/echo/rel/echo/lib/echo-0.0.1"}],
+          permanent}].

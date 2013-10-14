@@ -1,0 +1,32 @@
+
+=====
+===== LOGGING STARTED Mon Oct 14 23:12:37 CST 2013
+=====
+Exec: /home/gavin/project/erlang/echo/rel/echo/erts-5.10.3/bin/erlexec -boot /home/gavin/project/erlang/echo/rel/echo/releases/1/echo -mode embedded -config /home/gavin/project/erlang/echo/rel/echo/releases/1/sys.config -args_file /home/gavin/project/erlang/echo/rel/echo/releases/1/vm.args -- console ''
+Root: /home/gavin/project/erlang/echo/rel/echo
+Erlang R16B02 (erts-5.10.3) [source-5d89ddd] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+Eshell V5.10.3  (abort with ^G)
+(echo@127.0.0.1)1> 
+=INFO REPORT==== 14-Oct-2013::23:12:37 ===
+    application: echo
+    exited: {{shutdown,
+                 {failed_to_start_child,echo_http_server,
+                     {undef,
+                         [{cowboy_router,compile,
+                              [[{'_',
+                                    [{"/reactiveprogramming/sendecho/",
+                                      handler_echo,[]}]}]],
+                              []},
+                          {echo_http_server,init,1,
+                              [{file,"src/echo_http_server.erl"},{line,36}]},
+                          {gen_server,init_it,6,
+                              [{file,"gen_server.erl"},{line,304}]},
+                          {proc_lib,init_p_do_apply,3,
+                              [{file,"proc_lib.erl"},{line,239}]}]}}},
+             {echo_app,start,[normal,[]]}}
+    type: permanent
+{"Kernel pid terminated",application_controller,"{application_start_failure,echo,{{shutdown,{failed_to_start_child,echo_http_server,{undef,[{cowboy_router,compile,[[{'_',[{\"/reactiveprogramming/sendecho/\",handler_echo,[]}]}]],[]},{echo_http_server,init,1,[{file,\"src/echo_http_server.erl\"},{line,36}]},{gen_server,init_it,6,[{file,\"gen_server.erl\"},{line,304}]},{proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,239}]}]}}},{echo_app,start,[normal,[]]}}}"}
+
+Crash dump was written to: erl_crash.dump
+Kernel pid terminated (application_controller) ({application_start_failure,echo,{{shutdown,{failed_to_start_child,echo_http_server,{undef,[{cowboy_router,compile,[[{'_',[{"/reactiveprogramming/sende
